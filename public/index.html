@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      Airbnb: Holiday Rentals, Cabins, Beach Houses, Unique Homes, &...
+    </title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Top Navbar Start  -->
+    <nav class="navbar navbar-expand-md nav fixed-top">
+      <div class="container nav-container">
+        <div class="left-navbar">
+          <a class="navbar-brand-logo" href="#">
+            <div class="full-svg">
+              <svg
+                class="logo"
+                width="102"
+                height="32"
+                fill="currentcolor"
+                style="display: block"
+              >
+                <path
+                  d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5zM41.54 24.12a5.02 5.02 0 01-3.95-1.83 6.55 6.55 0 01-1.6-4.48 6.96 6.96 0 011.66-4.58 5.3 5.3 0 014.08-1.86 4.3 4.3 0 013.7 1.92l.1-1.57h2.92V23.8h-2.93l-.1-1.76a4.52 4.52 0 01-3.88 2.08zm.76-2.88c.58 0 1.09-.16 1.57-.45.44-.32.8-.74 1.08-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.55.45zM53.45 8.46c0 .35-.06.67-.22.93-.16.25-.38.48-.67.64-.29.16-.6.22-.92.22-.32 0-.64-.06-.93-.22a1.84 1.84 0 01-.67-.64 1.82 1.82 0 01-.22-.93c0-.36.07-.68.22-.93.16-.3.39-.48.67-.64.29-.16.6-.23.93-.23a1.84 1.84 0 011.6.86 2 2 0 01.21.94zm-3.4 15.3V11.7h3.18v12.08h-3.19zm11.68-8.9v.04c-.15-.07-.35-.1-.5-.13-.2-.04-.36-.04-.55-.04-.89 0-1.56.26-2 .8-.48.55-.7 1.32-.7 2.31v5.93h-3.19V11.69h2.93l.1 1.83c.32-.64.7-1.12 1.24-1.48a3.1 3.1 0 011.81-.5c.23 0 .45.02.64.06.1.03.16.03.22.06v3.2zm1.28 8.9V6.74h3.18v6.5c.45-.58.96-1.03 1.6-1.38a5.02 5.02 0 016.08 1.31 6.55 6.55 0 011.6 4.49 6.96 6.96 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.1 1.57-2.92.03zm6.15-2.52c.57 0 1.08-.16 1.56-.45.44-.32.8-.74 1.08-1.25.26-.51.38-1.12.38-1.8 0-.67-.12-1.28-.38-1.79a3.75 3.75 0 00-1.08-1.25 2.95 2.95 0 00-3.12 0c-.45.32-.8.74-1.09 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.56.45zm7.51 2.53V11.69h2.93l.1 1.57a3.96 3.96 0 013.54-1.89 4.1 4.1 0 013.82 2.44c.35.76.54 1.7.54 2.75v7.24h-3.19v-6.82c0-.84-.19-1.5-.57-1.99-.38-.48-.9-.74-1.56-.74-.48 0-.9.1-1.27.32-.35.23-.64.52-.86.93a2.7 2.7 0 00-.32 1.35v6.92h-3.16zm12.52 0V6.73h3.19v6.5a4.67 4.67 0 013.73-1.89 5.02 5.02 0 013.95 1.83 6.57 6.57 0 011.59 4.48 6.95 6.95 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.09 1.57-2.93.03zm6.18-2.53c.58 0 1.09-.16 1.56-.45.45-.32.8-.74 1.09-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a3.63 3.63 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.95.45 1.55.45z"
+                ></path>
+              </svg>
+            </div>
+            <div class="half-svg">
+              <svg
+                width="30"
+                height="32"
+                fill="currentcolor"
+                style="display: block"
+              >
+                <path
+                  d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="center-navbar">
+          <div class="search">
+            <button
+              class="search-btn d-flex justify-content-between align-items-center"
+              type="button"
+            >
+              <span class="btn-label">Start your search</span>
+              <span
+                class="serch-icon d-flex justify-content-center align-items-center"
+              >
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    display: block;
+                    fill: none;
+                    height: 12px;
+                    width: 12px;
+                    stroke: currentColor;
+                    stroke-width: 5.333333333333333;
+                    overflow: visible;
+                  "
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                >
+                  <g fill="none">
+                    <path
+                      d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="right-navbar">
+          <div class="profile">
+            <div class="left-profile">
+              <a href="#" class="button btn-nav">Become a host</a>
+              <a href="#" class="button btn-world">
+                <svg
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 16px;
+                    width: 16px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="right-profile">
+              <button
+                type="button"
+                class="user-button d-flex align-items-center"
+                aria-expanded="false"
+                id="field-guide-toggle"
+                data-testid="cypress-headernav-profile"
+              >
+                <div class="_3hmsj">
+                  <svg
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="presentation"
+                    focusable="false"
+                    style="
+                      display: block;
+                      fill: none;
+                      height: 16px;
+                      width: 16px;
+                      stroke: currentcolor;
+                      stroke-width: 3;
+                      overflow: visible;
+                    "
+                  >
+                    <g fill="none" fill-rule="nonzero">
+                      <path d="m2 16h28"></path>
+                      <path d="m2 24h28"></path>
+                      <path d="m2 8h28"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="user-svg" aria-label="Main navigation menu">
+                  <svg
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="presentation"
+                    focusable="false"
+                    style="
+                      display: block;
+                      height: 100%;
+                      width: 100%;
+                      fill: currentcolor;
+                    "
+                  >
+                    <path
+                      d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z"
+                    ></path>
+                  </svg>
+                </div>
+                <div
+                  class="notification-dot"
+                  aria-label="Has notifications"
+                ></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-small">
+        <div class="search-small">
+          <button
+            class="search-btn-small d-flex justify-content-center align-items-center"
+            type="button"
+          >
+            <div class="serch-icon-small">
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                style="
+                  display: block;
+                  fill: none;
+                  height: 12px;
+                  width: 12px;
+                  stroke: currentColor;
+                  stroke-width: 5.333333333333333;
+                  overflow: visible;
+                "
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+              >
+                <g fill="none">
+                  <path
+                    d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="btn-label-small">Where are you going?</div>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Top Navbar End  -->
+
+    <!-- Bottom Navbar Start  -->
+    <nav
+      class="bottom-nav"
+      id="bottom-nav"
+      style="position: fixed; right: 0; bottom: 0; left: 0; z-index: 1030"
+    >
+      <div
+        class="b-nav-container d-flex align-items-center justify-content-center"
+      >
+        <a
+          class="explore-section d-flex flex-column align-items-center text-center text-decoration-none"
+        >
+          <div class="exp-top d-flex">
+            <div
+              class="explore-icon d-flex justify-content-center align-items-center"
+            >
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+                style="
+                  display: block;
+                  fill: none;
+                  height: 24px;
+                  width: 24px;
+                  stroke: currentcolor;
+                  stroke-width: 4;
+                  overflow: visible;
+                "
+              >
+                <g fill="none">
+                  <path
+                    d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="exp-text">Explore</div>
+        </a>
+        <a
+          class="wishlist-section d-flex flex-column align-items-center text-center text-decoration-none"
+        >
+          <div class="wishlist-top d-flex">
+            <div
+              class="wishlist-icon d-flex justify-content-center align-items-center"
+            >
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+                style="
+                  display: block;
+                  fill: none;
+                  height: 24px;
+                  width: 24px;
+                  stroke: currentcolor;
+                  stroke-width: 2.66667;
+                  overflow: visible;
+                "
+              >
+                <path
+                  d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="wish-text">Wishlists</div>
+        </a>
+        <a
+          class="login-section d-flex flex-column align-items-center text-center text-decoration-none"
+        >
+          <div class="login-top d-flex">
+            <div
+              class="login-icon d-flex justify-content-center align-items-center"
+            >
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+                style="
+                  display: block;
+                  height: 24px;
+                  width: 24px;
+                  fill: currentcolor;
+                "
+              >
+                <path
+                  d="m16 1c8.2842712 0 15 6.71572875 15 15 0 8.2842712-6.7157288 15-15 15-8.28427125 0-15-6.7157288-15-15 0-8.28427125 6.71572875-15 15-15zm0 8c-2.7614237 0-5 2.2385763-5 5 0 2.0143973 1.2022141 3.7998876 2.9996346 4.5835001l.0003231 2.0984999-.1499943.0278452c-2.8326474.5613112-5.31897338 2.2230336-6.93575953 4.5872979 2.34343054 2.291067 5.54974273 3.7028569 9.08579613 3.7028569 3.5355506 0 6.7414538-1.4113884 9.0850203-3.701476-1.6141801-2.3628535-4.0978119-4.0247647-6.929184-4.5867938l-.1558786-.0287302.001228-2.0991413c1.7288399-.7547474 2.9066959-2.4357565 2.9936498-4.355479l.0051645-.2283797c0-2.7614237-2.2385763-5-5-5zm0-6c-7.17970175 0-13 5.82029825-13 13 0 2.9045768.95257276 5.5866683 2.56235849 7.7509147 1.42074739-1.9134907 3.33951478-3.4002416 5.53860831-4.2955956l.3480332-.1363191-.0229565-.0189706c-1.43704227-1.2411241-2.34462949-3.045583-2.42083359-5.0285539l-.00520991-.2714755c0-3.8659932 3.1340068-7 7-7s7 3.1340068 7 7c0 1.9941317-.8415062 3.8279876-2.224566 5.1193683l-.225434.2006317.0447787.0163138c2.3268368.8792152 4.3570558 2.4138611 5.8430586 4.4127726 1.6098837-2.1632453 2.5621627-4.8449575 2.5621627-7.7490864 0-7.17970175-5.8202983-13-13-13z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="login-text">Log in</div>
+        </a>
+      </div>
+    </nav>
+    <!-- Bottom Navbar End  -->
+
+    <!-- Body Start -->
+    <div class="container-fluid main">
+      <!-- First Section Start -->
+
+      <div class="first row dark">
+        <div class="container-fluid cont">
+          <div class="col-xl-12 card p-0 dark">
+            <picture
+              ><source
+                srcset="
+                  https://a0.muscache.com/im/pictures/53e51dcb-8fad-4ce8-b61c-8a7a369267bf.jpg?im_q=highq&amp;im_w=1920 1x,
+                  https://a0.muscache.com/im/pictures/53e51dcb-8fad-4ce8-b61c-8a7a369267bf.jpg?im_q=highq&amp;im_w=2560 2x
+                "
+                media="(min-width: 2080px)" />
+              <source
+                srcset="
+                  https://a0.muscache.com/im/pictures/53e51dcb-8fad-4ce8-b61c-8a7a369267bf.jpg?im_w=1200 1x,
+                  https://a0.muscache.com/im/pictures/53e51dcb-8fad-4ce8-b61c-8a7a369267bf.jpg?im_w=2560 2x
+                "
+                media="(min-width: 1440px)" />
+              <source
+                srcset="
+                  https://a0.muscache.com/im/pictures/21c2735e-a734-40f8-9f60-9ac299c4394c.jpg?im_w=960  1x,
+                  https://a0.muscache.com/im/pictures/21c2735e-a734-40f8-9f60-9ac299c4394c.jpg?im_w=1920 2x
+                "
+                media="(min-width: 1128px)" />
+              <source
+                srcset="
+                  https://a0.muscache.com/im/pictures/95fab018-afab-4a2d-bf80-775b1dd57acf.jpg?im_w=720  1x,
+                  https://a0.muscache.com/im/pictures/95fab018-afab-4a2d-bf80-775b1dd57acf.jpg?im_w=1440 2x
+                "
+                media="(min-width: 744px)" />
+              <source
+                srcset="
+                  https://a0.muscache.com/im/pictures/66e15b42-bbfa-46d8-b046-bb8d73e18340.jpg?im_w=320 1x,
+                  https://a0.muscache.com/im/pictures/66e15b42-bbfa-46d8-b046-bb8d73e18340.jpg?im_w=720 2x
+                "
+                media="(min-width: 375px)" />
+              <source
+                srcset="
+                  https://a0.muscache.com/im/pictures/7b8f9425-f5e7-4c9e-9d6d-b39fa2f6e651.jpg?im_w=320 1x,
+                  https://a0.muscache.com/im/pictures/7b8f9425-f5e7-4c9e-9d6d-b39fa2f6e651.jpg?im_w=720 2x
+                " />
+              <img
+                class="card-img-top"
+                aria-hidden="true"
+                alt="A guest stands, waving, in the doorway of a unique-looking dome house at dusk, bathed in warm, welcoming light."
+                id="FMP-target"
+                src="https://a0.muscache.com/im/pictures/7b8f9425-f5e7-4c9e-9d6d-b39fa2f6e651.jpg?im_q=highq&amp;im_w=720"
+            /></picture>
+            <span
+              class="card-img-overlay d-flex flex-column justify-content-end align-items-center"
+            >
+              <pre class="Heading">
+Not sure where to go?
+                 Perfect.</pre
+              >
+              <a class="btn-flexible" href="">
+                <span class="flx-btn-text">I’m flexible</span></a
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- First Section End -->
+
+      <!-- HOMEPAGE_DESTINATION_RECOMMENDATIONSSTART -->
+      <div class="second row">
+        <div class="col-xl-12 p-0">
+          <div class="container-fluid cont-second">
+            <div
+              class="row d-flex flex-row justify-content-between s-first-row"
+            >
+              <pre class="subhead d-flex">
+Inspiration for your
+                 next trip</pre
+              >
+              <span class="second-nav">
+                <div class="s-n-buttons d-flex align-items-center">
+                  <div class="btn-row d-flex">
+                    <button class="btn-previous" id="btn-previous" disabled>
+                      <span class="previous-txt">
+                        <svg
+                          viewBox="0 0 32 32"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          role="presentation"
+                          focusable="false"
+                          style="
+                            display: block;
+                            fill: none;
+                            height: 12px;
+                            width: 12px;
+                            stroke: currentcolor;
+                            stroke-width: 4;
+                            overflow: visible;
+                          "
+                        >
+                          <g fill="none">
+                            <path
+                              d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                    </button>
+                    <span class="btn-margin"></span>
+                    <button class="btn-next" id="btn-next">
+                      <span class="next-txt">
+                        <svg
+                          viewBox="0 0 32 32"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          role="presentation"
+                          focusable="false"
+                          style="
+                            display: block;
+                            fill: none;
+                            height: 12px;
+                            width: 12px;
+                            stroke: currentcolor;
+                            stroke-width: 4;
+                            overflow: visible;
+                          "
+                        >
+                          <g fill="none">
+                            <path
+                              d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </span>
+            </div>
+          </div>
+          <div class="container-fluid cont-second p-0 grid-cards">
+            <div class="city-cards">
+              <div>
+                <div>
+                  <div class="main-container">
+                    <div>
+                      <a href="" class="text-decoration-none">
+                        <div class="card-container">
+                          <div class="card-inner-grid inner-childs">
+                            <div class="card-inner-flex">
+                              <div class="card-img-wrapper">
+                                <div
+                                  class="picture-div"
+                                  style="
+                                    height: 100%;
+                                    width: 100%;
+                                    background-size: cover;
+                                  "
+                                >
+                                  <picture
+                                    ><source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=480 1x,
+                                        https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=960 2x
+                                      "
+                                      media="(min-width: 2080px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=320 1x,
+                                        https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=720 2x
+                                      "
+                                      media="(min-width: 1440px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=240 1x,
+                                        https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=480 2x
+                                      "
+                                      media="(min-width: 1128px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=240 1x,
+                                        https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=320 2x
+                                      "
+                                      media="(min-width: 744px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=240 1x,
+                                        https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=320 2x
+                                      "
+                                      media="(min-width: 375px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=320 1x,
+                                        https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=720 2x
+                                      " />
+                                    <img
+                                      class="card-img-top"
+                                      aria-hidden="true"
+                                      alt=""
+                                      src="https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_q=highq&amp;im_w=720"
+                                      data-lcp-target="true"
+                                      elementtiming="LCP-target"
+                                      style="
+                                        position: absolute;
+                                        left: 0px;
+                                        right: 0px;
+                                        object-fit: cover;
+                                        object-position: center center;
+                                        vertical-align: bottom;
+                                      "
+                                  /></picture>
+                                </div>
+                              </div>
+                              <div class="main-child-wrapper"></div>
+                            </div>
+                          </div>
+                          <div class="card-inner-grid inner-childs">
+                            <div class="inner-childs card-inner-flex">
+                              <div
+                                class="main-child-wrapper"
+                                style="
+                                  padding: 24px 16px 16px;
+                                  background: #d93b30;
+                                "
+                              >
+                                <div class="card-inner-contents">
+                                  <div class="card-inner-text">
+                                    <span class="card-title">Udaipur</span>
+                                  </div>
+                                  <div class="card-inner-text">
+                                    <span class="card-text"
+                                      >206 kilometres away</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div class="main-container">
+                    <div>
+                      <a href="" class="text-decoration-none">
+                        <div
+                          class="card-container"
+                          style="border-radius: 12px; background: none"
+                        >
+                          <div class="card-inner-grid inner-childs">
+                            <div class="card-inner-flex">
+                              <div class="card-img-wrapper">
+                                <div
+                                  class="picture-div"
+                                  style="
+                                    height: 100%;
+                                    width: 100%;
+                                    background-size: cover;
+                                  "
+                                >
+                                  <picture
+                                    ><source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=480 1x,
+                                        https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=960 2x
+                                      "
+                                      media="(min-width: 2080px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=320 1x,
+                                        https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=720 2x
+                                      "
+                                      media="(min-width: 1440px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=240 1x,
+                                        https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=480 2x
+                                      "
+                                      media="(min-width: 1128px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=240 1x,
+                                        https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=320 2x
+                                      "
+                                      media="(min-width: 744px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=240 1x,
+                                        https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=320 2x
+                                      "
+                                      media="(min-width: 375px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=320 1x,
+                                        https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=720 2x
+                                      " />
+                                    <img
+                                      class="card-img-top"
+                                      aria-hidden="true"
+                                      alt=""
+                                      src="https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_q=highq&amp;im_w=720"
+                                  /></picture>
+                                </div>
+                              </div>
+                              <div class="main-child-wrapper"></div>
+                            </div>
+                          </div>
+                          <div class="card-inner-grid inner-childs">
+                            <div class="inner-childs card-inner-flex">
+                              <div
+                                class="main-child-wrapper"
+                                style="
+                                  padding: 24px 16px 16px;
+                                  background: #de3151;
+                                "
+                              >
+                                <div class="card-inner-contents">
+                                  <div class="card-inner-text">
+                                    <span class="card-title">Ahmedabad</span>
+                                  </div>
+                                  <div class="card-inner-text">
+                                    <span class="card-text"
+                                      >5 kilometres away</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div class="main-container">
+                    <div>
+                      <a href="" class="text-decoration-none">
+                        <div
+                          class="card-container"
+                          style="border-radius: 12px; background: none"
+                        >
+                          <div class="card-inner-grid inner-childs">
+                            <div class="card-inner-flex">
+                              <div class="card-img-wrapper">
+                                <div
+                                  class="picture-div"
+                                  style="
+                                    height: 100%;
+                                    width: 100%;
+                                    background-size: cover;
+                                  "
+                                >
+                                  <picture
+                                    ><source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=480 1x,
+                                        https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=960 2x
+                                      "
+                                      media="(min-width: 2080px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=320 1x,
+                                        https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=720 2x
+                                      "
+                                      media="(min-width: 1440px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=240 1x,
+                                        https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=480 2x
+                                      "
+                                      media="(min-width: 1128px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=240 1x,
+                                        https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=320 2x
+                                      "
+                                      media="(min-width: 744px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=240 1x,
+                                        https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=320 2x
+                                      "
+                                      media="(min-width: 375px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=320 1x,
+                                        https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=720 2x
+                                      " />
+                                    <img
+                                      class="card-img-top"
+                                      aria-hidden="true"
+                                      alt=""
+                                      src="https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_q=highq&amp;im_w=720"
+                                  /></picture>
+                                </div>
+                              </div>
+                              <div class="main-child-wrapper"></div>
+                            </div>
+                          </div>
+                          <div class="card-inner-grid inner-childs">
+                            <div class="inner-childs card-inner-flex">
+                              <div
+                                class="main-child-wrapper"
+                                style="
+                                  padding: 24px 16px 16px;
+                                  background: #cc2d4a;
+                                "
+                              >
+                                <div class="card-inner-contents">
+                                  <div class="card-inner-text">
+                                    <span class="card-title">Mumbai</span>
+                                  </div>
+                                  <div class="card-inner-text">
+                                    <span class="card-text"
+                                      >440 kilometres away</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div class="main-container">
+                    <div>
+                      <a href="" class="text-decoration-none">
+                        <div
+                          class="card-container"
+                          style="border-radius: 12px; background: none"
+                        >
+                          <div class="card-inner-grid inner-childs">
+                            <div class="card-inner-flex">
+                              <div class="card-img-wrapper">
+                                <div
+                                  class="picture-div"
+                                  style="
+                                    height: 100%;
+                                    width: 100%;
+                                    background-size: cover;
+                                  "
+                                >
+                                  <picture
+                                    ><source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=480 1x,
+                                        https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=960 2x
+                                      "
+                                      media="(min-width: 2080px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=320 1x,
+                                        https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=720 2x
+                                      "
+                                      media="(min-width: 1440px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=240 1x,
+                                        https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=480 2x
+                                      "
+                                      media="(min-width: 1128px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=240 1x,
+                                        https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=320 2x
+                                      "
+                                      media="(min-width: 744px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=240 1x,
+                                        https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=320 2x
+                                      "
+                                      media="(min-width: 375px)" />
+                                    <source
+                                      srcset="
+                                        https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=320 1x,
+                                        https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=720 2x
+                                      " />
+                                    <img
+                                      class="card-img-top"
+                                      aria-hidden="true"
+                                      alt=""
+                                      src="https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_q=highq&amp;im_w=720"
+                                  /></picture>
+                                </div>
+                              </div>
+                              <div class="main-child-wrapper"></div>
+                            </div>
+                          </div>
+                          <div class="card-inner-grid inner-childs">
+                            <div class="inner-childs card-inner-flex">
+                              <div
+                                class="main-child-wrapper"
+                                style="
+                                  padding: 24px 16px 16px;
+                                  background: #bc1a6e;
+                                "
+                              >
+                                <div class="card-inner-contents">
+                                  <div class="card-inner-text">
+                                    <span class="card-title">Igatpuri</span>
+                                  </div>
+                                  <div class="card-inner-text">
+                                    <span class="card-text"
+                                      >383 kilometres away</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 mx-auto scroll-cards">
+            <div class="city-scroll-cards d-flex" id="city-scroll-cards">
+              <div>
+                <div class="main-container">
+                  <div>
+                    <a href="" class="text-decoration-none">
+                      <div class="card-container">
+                        <div class="card-inner-grid inner-childs">
+                          <div class="card-inner-flex">
+                            <div class="card-img-wrapper">
+                              <div
+                                class="picture-div"
+                                style="
+                                  height: 100%;
+                                  width: 100%;
+                                  background-size: cover;
+                                "
+                              >
+                                <picture
+                                  ><source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=480 1x,
+                                      https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=960 2x
+                                    "
+                                    media="(min-width: 2080px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=320 1x,
+                                      https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=720 2x
+                                    "
+                                    media="(min-width: 1440px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=240 1x,
+                                      https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=480 2x
+                                    "
+                                    media="(min-width: 1128px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=240 1x,
+                                      https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=320 2x
+                                    "
+                                    media="(min-width: 744px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=240 1x,
+                                      https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=320 2x
+                                    "
+                                    media="(min-width: 375px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=320 1x,
+                                      https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=720 2x
+                                    " />
+                                  <img
+                                    class="card-img-top"
+                                    aria-hidden="true"
+                                    alt=""
+                                    src="https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_q=highq&amp;im_w=720"
+                                    data-lcp-target="true"
+                                    elementtiming="LCP-target"
+                                    style="
+                                      position: absolute;
+                                      left: 0px;
+                                      right: 0px;
+                                      object-fit: cover;
+                                      object-position: center center;
+                                      vertical-align: bottom;
+                                    "
+                                /></picture>
+                              </div>
+                            </div>
+                            <div class="main-child-wrapper"></div>
+                          </div>
+                        </div>
+                        <div class="card-inner-grid inner-childs">
+                          <div class="inner-childs card-inner-flex">
+                            <div
+                              class="main-child-wrapper"
+                              style="
+                                padding: 24px 16px 16px;
+                                background: #d93b30;
+                              "
+                            >
+                              <div class="card-inner-contents">
+                                <div class="card-inner-text">
+                                  <span class="card-title">Udaipur</span>
+                                </div>
+                                <div class="card-inner-text">
+                                  <span class="card-text"
+                                    >206 kilometres away</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="main-container">
+                  <div>
+                    <a href="" class="text-decoration-none">
+                      <div
+                        class="card-container"
+                        style="border-radius: 12px; background: none"
+                      >
+                        <div class="card-inner-grid inner-childs">
+                          <div class="card-inner-flex">
+                            <div class="card-img-wrapper">
+                              <div
+                                class="picture-div"
+                                style="
+                                  height: 100%;
+                                  width: 100%;
+                                  background-size: cover;
+                                "
+                              >
+                                <picture
+                                  ><source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=480 1x,
+                                      https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=960 2x
+                                    "
+                                    media="(min-width: 2080px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=320 1x,
+                                      https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=720 2x
+                                    "
+                                    media="(min-width: 1440px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=240 1x,
+                                      https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=480 2x
+                                    "
+                                    media="(min-width: 1128px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=240 1x,
+                                      https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=320 2x
+                                    "
+                                    media="(min-width: 744px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=240 1x,
+                                      https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=320 2x
+                                    "
+                                    media="(min-width: 375px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=320 1x,
+                                      https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=720 2x
+                                    " />
+                                  <img
+                                    class="card-img-top"
+                                    aria-hidden="true"
+                                    alt=""
+                                    src="https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_q=highq&amp;im_w=720"
+                                /></picture>
+                              </div>
+                            </div>
+                            <div class="main-child-wrapper"></div>
+                          </div>
+                        </div>
+                        <div class="card-inner-grid inner-childs">
+                          <div class="inner-childs card-inner-flex">
+                            <div
+                              class="main-child-wrapper"
+                              style="
+                                padding: 24px 16px 16px;
+                                background: #de3151;
+                              "
+                            >
+                              <div class="card-inner-contents">
+                                <div class="card-inner-text">
+                                  <span class="card-title">Ahmedabad</span>
+                                </div>
+                                <div class="card-inner-text">
+                                  <span class="card-text"
+                                    >5 kilometres away</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="main-container">
+                  <div>
+                    <a href="" class="text-decoration-none">
+                      <div
+                        class="card-container"
+                        style="border-radius: 12px; background: none"
+                      >
+                        <div class="card-inner-grid inner-childs">
+                          <div class="card-inner-flex">
+                            <div class="card-img-wrapper">
+                              <div
+                                class="picture-div"
+                                style="
+                                  height: 100%;
+                                  width: 100%;
+                                  background-size: cover;
+                                "
+                              >
+                                <picture
+                                  ><source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=480 1x,
+                                      https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=960 2x
+                                    "
+                                    media="(min-width: 2080px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=320 1x,
+                                      https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=720 2x
+                                    "
+                                    media="(min-width: 1440px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=240 1x,
+                                      https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=480 2x
+                                    "
+                                    media="(min-width: 1128px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=240 1x,
+                                      https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=320 2x
+                                    "
+                                    media="(min-width: 744px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=240 1x,
+                                      https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=320 2x
+                                    "
+                                    media="(min-width: 375px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=320 1x,
+                                      https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=720 2x
+                                    " />
+                                  <img
+                                    class="card-img-top"
+                                    aria-hidden="true"
+                                    alt=""
+                                    src="https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_q=highq&amp;im_w=720"
+                                /></picture>
+                              </div>
+                            </div>
+                            <div class="main-child-wrapper"></div>
+                          </div>
+                        </div>
+                        <div class="card-inner-grid inner-childs">
+                          <div class="inner-childs card-inner-flex">
+                            <div
+                              class="main-child-wrapper"
+                              style="
+                                padding: 24px 16px 16px;
+                                background: #cc2d4a;
+                              "
+                            >
+                              <div class="card-inner-contents">
+                                <div class="card-inner-text">
+                                  <span class="card-title">Mumbai</span>
+                                </div>
+                                <div class="card-inner-text">
+                                  <span class="card-text"
+                                    >440 kilometres away</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="main-container">
+                  <div>
+                    <a href="" class="text-decoration-none">
+                      <div
+                        class="card-container"
+                        style="border-radius: 12px; background: none"
+                      >
+                        <div class="card-inner-grid inner-childs">
+                          <div class="card-inner-flex">
+                            <div class="card-img-wrapper">
+                              <div
+                                class="picture-div"
+                                style="
+                                  height: 100%;
+                                  width: 100%;
+                                  background-size: cover;
+                                "
+                              >
+                                <picture
+                                  ><source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=480 1x,
+                                      https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=960 2x
+                                    "
+                                    media="(min-width: 2080px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=320 1x,
+                                      https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=720 2x
+                                    "
+                                    media="(min-width: 1440px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=240 1x,
+                                      https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=480 2x
+                                    "
+                                    media="(min-width: 1128px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=240 1x,
+                                      https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=320 2x
+                                    "
+                                    media="(min-width: 744px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=240 1x,
+                                      https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=320 2x
+                                    "
+                                    media="(min-width: 375px)" />
+                                  <source
+                                    srcset="
+                                      https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=320 1x,
+                                      https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_w=720 2x
+                                    " />
+                                  <img
+                                    class="card-img-top"
+                                    aria-hidden="true"
+                                    alt=""
+                                    src="https://a0.muscache.com/im/pictures/3a7b8005-28b8-48b8-8efa-0a6a00f7d5d8.jpg?im_q=highq&amp;im_w=720"
+                                /></picture>
+                              </div>
+                            </div>
+                            <div class="main-child-wrapper"></div>
+                          </div>
+                        </div>
+                        <div class="card-inner-grid inner-childs">
+                          <div class="inner-childs card-inner-flex">
+                            <div
+                              class="main-child-wrapper"
+                              style="
+                                padding: 24px 16px 16px;
+                                background: #bc1a6e;
+                              "
+                            >
+                              <div class="card-inner-contents">
+                                <div class="card-inner-text">
+                                  <span class="card-title">Igatpuri</span>
+                                </div>
+                                <div class="card-inner-text">
+                                  <span class="card-text"
+                                    >383 kilometres away</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HOMEPAGE_DESTINATION_RECOMMENDATIONSEND-->
+
+      <!-- Discover Airbnb Experiences Start -->
+      <div class="row experiences">
+        <div class="col-xl-12 p-0 exp-r-one">
+          <div class="container c-title cont">
+            <div class="row s-first-row">
+              <pre class="subhead">
+Discover Airbnb
+                Experiences</pre
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-12 exp-r-two">
+          <div class="container c-img-row cont p-0">
+            <!-- <div class="row">
+              <div class="col-xl-6 col-6 img-col left-img">
+                
+              </div>
+              <div class="col-xl-6 col-6 img-col right-img">
+                
+              </div>
+            </div> -->
+            <div class="exp-cards">
+              <div class="e-card">
+                <div class="card">
+                  <picture>
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/b2f98185-f3bf-40db-ba8d-da0bceeccc65.jpg?im_w=960  1x,
+                        https://a0.muscache.com/im/pictures/b2f98185-f3bf-40db-ba8d-da0bceeccc65.jpg?im_w=1920 2x
+                      "
+                      media="(min-width: 2080px)"
+                    />
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/b2f98185-f3bf-40db-ba8d-da0bceeccc65.jpg?im_w=720  1x,
+                        https://a0.muscache.com/im/pictures/b2f98185-f3bf-40db-ba8d-da0bceeccc65.jpg?im_w=1200 2x
+                      "
+                      media="(min-width: 1440px)"
+                    />
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/0dcae177-2f65-4a15-b9e8-75d8c9b3cbe8.jpg?im_w=480 1x,
+                        https://a0.muscache.com/im/pictures/0dcae177-2f65-4a15-b9e8-75d8c9b3cbe8.jpg?im_w=960 2x
+                      "
+                      media="(min-width: 1128px)"
+                    />
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/35612883-8e4c-440a-a768-ca7f268bd294.jpg?im_w=320 1x,
+                        https://a0.muscache.com/im/pictures/35612883-8e4c-440a-a768-ca7f268bd294.jpg?im_w=720 2x
+                      "
+                      media="(min-width: 744px)"
+                    />
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/8f0847aa-9c7e-4371-990c-84987b61f7f7.jpg?im_w=320 1x,
+                        https://a0.muscache.com/im/pictures/8f0847aa-9c7e-4371-990c-84987b61f7f7.jpg?im_w=720 2x
+                      "
+                      media="(min-width: 375px)"
+                    />
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/0947f1e4-a6a9-4514-8b78-9e47ea797631.jpg?im_w=320 1x,
+                        https://a0.muscache.com/im/pictures/0947f1e4-a6a9-4514-8b78-9e47ea797631.jpg?im_w=720 2x
+                      "
+                    />
+                    <img
+                      class="card-img-top"
+                      aria-hidden="true"
+                      alt="Three people are in a sandstone canyon in Kanab, Utah, in the USA. The Experience Host points out something above to their two guests."
+                      src="https://a0.muscache.com/im/pictures/0947f1e4-a6a9-4514-8b78-9e47ea797631.jpg?im_q=highq&amp;im_w=720"
+                    />
+                  </picture>
+                  <span class="txt-grp card-img-overlay d-flex flex-column">
+                    <pre class="txt-title">
+  Things to do
+                      on your trip</pre
+                    >
+                    <span class="txt-btn"><a href="">Experiences</a></span>
+                  </span>
+                </div>
+              </div>
+              <div class="e-card">
+                <div class="card">
+                  <picture
+                    ><source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/cae7ae9a-d069-4c6a-9267-795643472df1.jpg?im_w=960  1x,
+                        https://a0.muscache.com/im/pictures/cae7ae9a-d069-4c6a-9267-795643472df1.jpg?im_w=1920 2x
+                      "
+                      media="(min-width: 2080px)" />
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/cae7ae9a-d069-4c6a-9267-795643472df1.jpg?im_w=720  1x,
+                        https://a0.muscache.com/im/pictures/cae7ae9a-d069-4c6a-9267-795643472df1.jpg?im_w=1200 2x
+                      "
+                      media="(min-width: 1440px)" />
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/4cef99fa-068f-4197-8b1d-e8e04ac0ceaf.jpg?im_w=480 1x,
+                        https://a0.muscache.com/im/pictures/4cef99fa-068f-4197-8b1d-e8e04ac0ceaf.jpg?im_w=960 2x
+                      "
+                      media="(min-width: 1128px)" />
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/aec597d9-9c5c-4746-965c-d3e1643299f7.jpg?im_w=320 1x,
+                        https://a0.muscache.com/im/pictures/aec597d9-9c5c-4746-965c-d3e1643299f7.jpg?im_w=720 2x
+                      "
+                      media="(min-width: 744px)" />
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/793167b0-0a3d-4156-8454-a7506723b377.jpg?im_w=320 1x,
+                        https://a0.muscache.com/im/pictures/793167b0-0a3d-4156-8454-a7506723b377.jpg?im_w=720 2x
+                      "
+                      media="(min-width: 375px)" />
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/49a25918-9b84-4d43-9d48-b45f926755bd.jpg?im_w=320 1x,
+                        https://a0.muscache.com/im/pictures/49a25918-9b84-4d43-9d48-b45f926755bd.jpg?im_w=720 2x
+                      " />
+                    <img
+                      class="card-img-top"
+                      aria-hidden="true"
+                      alt="A Host sits in their home in Bali, Indonesia. She holds up a batik cloth she has just made to her phone, through which she is hosting an Online Experience."
+                      src="https://a0.muscache.com/im/pictures/49a25918-9b84-4d43-9d48-b45f926755bd.jpg?im_q=highq&amp;im_w=720"
+                  /></picture>
+                  <span class="txt-grp card-img-overlay d-flex flex-column">
+                    <pre class="txt-title">
+                      Things to do 
+                      from home
+                      </pre
+                    >
+                    <span class="txt-btn"
+                      ><a href="">Online Experiences</a></span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-12 p-0 exp-r-three">
+          <div class="container c-img-col">
+            <div class="row">
+              <div class="col-xl-12 big-img-col">
+                <div class="img-row card">
+                  <picture
+                    ><source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/cca24f3f-8f66-4e9d-98d8-dd5cda8911eb.jpg?im_w=1920 1x,
+                        https://a0.muscache.com/im/pictures/cca24f3f-8f66-4e9d-98d8-dd5cda8911eb.jpg?im_w=2560 2x
+                      "
+                      media="(min-width: 2080px)" />
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/cca24f3f-8f66-4e9d-98d8-dd5cda8911eb.jpg?im_w=1200 1x,
+                        https://a0.muscache.com/im/pictures/cca24f3f-8f66-4e9d-98d8-dd5cda8911eb.jpg?im_w=1920 2x
+                      "
+                      media="(min-width: 1440px)" />
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/83f0dc6f-9290-46f6-9db5-339d525b44d1.jpg?im_w=960  1x,
+                        https://a0.muscache.com/im/pictures/83f0dc6f-9290-46f6-9db5-339d525b44d1.jpg?im_w=1920 2x
+                      "
+                      media="(min-width: 1128px)" />
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/aa630fb7-eeb3-4fc1-aa69-456c0eb83d8b.jpg?im_w=720  1x,
+                        https://a0.muscache.com/im/pictures/aa630fb7-eeb3-4fc1-aa69-456c0eb83d8b.jpg?im_w=1440 2x
+                      "
+                      media="(min-width: 744px)" />
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/ed45c7d3-062a-4b1e-875e-629bbebaf560.jpg?im_w=320 1x,
+                        https://a0.muscache.com/im/pictures/ed45c7d3-062a-4b1e-875e-629bbebaf560.jpg?im_w=720 2x
+                      "
+                      media="(min-width: 375px)" />
+                    <source
+                      srcset="
+                        https://a0.muscache.com/im/pictures/6df2185c-d1b0-4fc6-9faf-13910b452d76.jpg?im_w=320 1x,
+                        https://a0.muscache.com/im/pictures/6df2185c-d1b0-4fc6-9faf-13910b452d76.jpg?im_w=720 2x
+                      " />
+                    <img
+                      class="card-img-top"
+                      aria-hidden="true"
+                      alt="A Host stands in a field, smiling warmly. The ocean and the roof of their home are in the background behind her."
+                      src="https://a0.muscache.com/im/pictures/6df2185c-d1b0-4fc6-9faf-13910b452d76.jpg?im_q=highq&amp;im_w=720"
+                  /></picture>
+                  <span
+                    class="txt-grp card-img-overlay d-flex flex-column justify-content-between"
+                  >
+                    <pre class="txt-title t3">
+  Questions
+                      about 
+                      hosting?
+                    </pre>
+                    <span class="txt-btn"><a href="">Ask a Superhost</a></span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Discover Airbnb Experiences End -->
+
+      <!-- Footer Start  -->
+      <footer class="row footer-navigation">
+        <div class="container-fluid footer-container">
+          <div class="row footer-row d-flex justify-content-center">
+            <div
+              class="col-xl-12 footer-col d-flex flex-column align-items-center"
+            >
+              <div class="row nav-first">
+                <section class="nav-column c-first">
+                  <div class="col-headers">
+                    <h3 class="col-header">Support</h3>
+                  </div>
+                  <ul class="footer-nav-list">
+                    <li class="footer-nav-list-item">
+                      <a
+                        href="/help/home?from=footer"
+                        class="footer-nav-list-item-link"
+                        >Help Centre</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a href="/trust" class="footer-nav-list-item-link"
+                        >Safety information</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a
+                        href="/help/article/2701/extenuating-circumstances-policy-and-the-coronavirus-covid19"
+                        class="footer-nav-list-item-link"
+                        >Cancellation options</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a href="/d/covidsafety" class="footer-nav-list-item-link"
+                        >Our COVID-19 Response</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a href="/accessibility" class="footer-nav-list-item-link"
+                        >Supporting people with disabilities</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a href="/neighbors" class="footer-nav-list-item-link"
+                        >Report a neighbourhood concern</a
+                      >
+                    </li>
+                  </ul>
+                </section>
+                <section class="nav-column">
+                  <div class="col-headers">
+                    <h3 class="col-header">Community</h3>
+                  </div>
+                  <ul class="footer-nav-list">
+                    <li class="footer-nav-list-item">
+                      <a
+                        href="https://www.airbnb.org?locale=en-IN"
+                        class="footer-nav-list-item-link"
+                        >Airbnb.org: disaster relief housing</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href="https://www.airbnb.org/refugees"
+                        class="footer-nav-list-item-link"
+                        >Support Afghan refugees</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a
+                        href="/against-discrimination"
+                        class="footer-nav-list-item-link"
+                        >Combating discrimination</a
+                      >
+                    </li>
+                  </ul>
+                </section>
+                <section class="nav-column">
+                  <div class="col-headers">
+                    <h3 class="col-header">Hosting</h3>
+                  </div>
+                  <ul class="footer-nav-list">
+                    <li class="footer-nav-list-item">
+                      <a
+                        href="/host/homes?from_footer=1"
+                        class="footer-nav-list-item-link"
+                        >Try hosting</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a href="/aircover" class="footer-nav-list-item-link"
+                        >AirCover: protection for Hosts</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a href="/resources" class="footer-nav-list-item-link"
+                        >Explore hosting resources</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a
+                        href="/help/community?s=footer"
+                        class="footer-nav-list-item-link"
+                        >Visit our community forum</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a
+                        href="/help/responsible-hosting"
+                        class="footer-nav-list-item-link"
+                        >How to host responsibly</a
+                      >
+                    </li>
+                  </ul>
+                </section>
+                <section class="nav-column c-last">
+                  <div class="col-headers">
+                    <h3 class="col-header">About</h3>
+                  </div>
+                  <ul class="footer-nav-list">
+                    <li class="footer-nav-list-item">
+                      <a href="/press/news" class="footer-nav-list-item-link"
+                        >Newsroom</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a href="/2021-winter" class="footer-nav-list-item-link"
+                        >Learn about new features</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a
+                        href="https://news.airbnb.com/what-makes-airbnb-airbnb"
+                        class="footer-nav-list-item-link"
+                        >Letter from our founders</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a href="/careers" class="footer-nav-list-item-link"
+                        >Careers</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a
+                        href="https://investors.airbnb.com"
+                        class="footer-nav-list-item-link"
+                        >Investors</a
+                      >
+                    </li>
+                    <li class="footer-nav-list-item">
+                      <a href="/luxury" class="footer-nav-list-item-link"
+                        >Airbnb Luxe</a
+                      >
+                    </li>
+                  </ul>
+                </section>
+                <!-- <div class="container">
+                  <div class="row"></div>
+                </div>
+              </div> -->
+              </div>
+              <div class="row copyright-row">
+                <div class="container copyright">
+                  <div class="row m-0">
+                    <div
+                      class="col-xl-12 d-flex justify-content-between p-0 f-row"
+                    >
+                      <div class="first-col-copy d-flex">
+                        <span class="abnb">© 2022 Airbnb, Inc.</span>
+                        <div class="nav-list">
+                          <span class="dot">·</span>
+                          <a href="">Privacy</a>
+                          <span class="dot">·</span>
+                          <a href="">Terms</a>
+                          <span class="dot">·</span>
+                          <a href="">Sitemap</a>
+                          <span class="dot">·</span>
+                          <a href="">Company details</a>
+                        </div>
+                      </div>
+                      <div class="second-col-copy d-flex flex-row">
+                        <div class="language-n-currency d-flex flex-row">
+                          <span class="language">
+                            <button class="btn-language d-flex flex-row">
+                              <span class="world-logo">
+                                <svg
+                                  viewBox="0 0 16 16"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  aria-hidden="true"
+                                  role="presentation"
+                                  focusable="false"
+                                  style="
+                                    display: block;
+                                    height: 16px;
+                                    width: 16px;
+                                    fill: currentcolor;
+                                  "
+                                >
+                                  <path
+                                    d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"
+                                  ></path>
+                                </svg>
+                              </span>
+                              <span class="bold-ul">English (IN)</span>
+                            </button>
+                          </span>
+                          <span class="currency">
+                            <button class="btn-currency d-flex flex-row">
+                              <span class="rupee-logo">₹</span>
+                              <span class="bold-ul">INR</span>
+                            </button>
+                          </span>
+                        </div>
+                        <div class="social-icons">
+                          <ul class="d-flex flex-row">
+                            <li class="facebook">
+                              <a href="">
+                                <svg
+                                  viewBox="0 0 32 32"
+                                  role="img"
+                                  aria-hidden="false"
+                                  aria-label="Navigate to Facebook"
+                                  focusable="false"
+                                  style="
+                                    height: 18px;
+                                    width: 18px;
+                                    display: block;
+                                    fill: currentcolor;
+                                  "
+                                >
+                                  <path
+                                    d="m8 14.41v-4.17c0-.42.35-.81.77-.81h2.52v-2.08c0-4.84 2.48-7.31 7.42-7.35 1.65 0 3.22.21 4.69.64.46.14.63.42.6.88l-.56 4.06c-.04.18-.14.35-.32.53-.21.11-.42.18-.63.14-.88-.25-1.78-.35-2.8-.35-1.4 0-1.61.28-1.61 1.73v1.8h4.52c.42 0 .81.42.81.88l-.35 4.17c0 .42-.35.71-.77.71h-4.21v16c0 .42-.35.81-.77.81h-5.21c-.42 0-.8-.39-.8-.81v-16h-2.52a.78.78 0 0 1 -.78-.78"
+                                    fill-rule="evenodd"
+                                  ></path>
+                                </svg>
+                              </a>
+                            </li>
+                            <li class="twitter">
+                              <a href="">
+                                <svg
+                                  viewBox="0 0 32 32"
+                                  role="img"
+                                  aria-hidden="false"
+                                  aria-label="Navigate to Twitter"
+                                  focusable="false"
+                                  style="
+                                    height: 18px;
+                                    width: 18px;
+                                    display: block;
+                                    fill: currentcolor;
+                                  "
+                                >
+                                  <path
+                                    d="m31 6.36c-1.16.49-2.32.82-3.55.95 1.29-.76 2.22-1.87 2.72-3.38a13.05 13.05 0 0 1 -3.91 1.51c-1.23-1.28-2.75-1.94-4.51-1.94-3.41 0-6.17 2.73-6.17 6.12 0 .49.07.95.17 1.38-4.94-.23-9.51-2.6-12.66-6.38-.56.95-.86 1.97-.86 3.09 0 2.07 1.03 3.91 2.75 5.06-1-.03-1.92-.3-2.82-.76v.07c0 2.89 2.12 5.42 4.94 5.98-.63.17-1.16.23-1.62.23-.3 0-.7-.03-1.13-.13a6.07 6.07 0 0 0 5.74 4.24c-2.22 1.74-4.78 2.63-7.66 2.63-.56 0-1.06-.03-1.43-.1 2.85 1.84 6 2.76 9.41 2.76 7.29 0 12.83-4.01 15.51-9.3 1.36-2.66 2.02-5.36 2.02-8.09v-.46c-.03-.17-.03-.3-.03-.33a12.66 12.66 0 0 0 3.09-3.16"
+                                    fill-rule="evenodd"
+                                  ></path>
+                                </svg>
+                              </a>
+                            </li>
+                            <li class="instagram">
+                              <a href="">
+                                <svg
+                                  viewBox="0 0 24 24"
+                                  role="img"
+                                  aria-hidden="false"
+                                  aria-label="Navigate to Instagram"
+                                  focusable="false"
+                                  style="
+                                    height: 18px;
+                                    width: 18px;
+                                    display: block;
+                                    fill: currentcolor;
+                                  "
+                                >
+                                  <path
+                                    d="m23.09.91c-.61-.61-1.33-.91-2.17-.91h-17.84c-.85 0-1.57.3-2.17.91s-.91 1.33-.91 2.17v17.84c0 .85.3 1.57.91 2.17s1.33.91 2.17.91h17.84c.85 0 1.57-.3 2.17-.91s.91-1.33.91-2.17v-17.84c0-.85-.3-1.57-.91-2.17zm-14.48 7.74c.94-.91 2.08-1.37 3.4-1.37 1.33 0 2.47.46 3.41 1.37s1.41 2.01 1.41 3.3-.47 2.39-1.41 3.3-2.08 1.37-3.41 1.37c-1.32 0-2.46-.46-3.4-1.37s-1.41-2.01-1.41-3.3.47-2.39 1.41-3.3zm12.66 11.63c0 .27-.09.5-.28.68a.92.92 0 0 1 -.67.28h-16.7a.93.93 0 0 1 -.68-.28.92.92 0 0 1 -.27-.68v-10.13h2.2a6.74 6.74 0 0 0 -.31 2.05c0 2 .73 3.71 2.19 5.12s3.21 2.12 5.27 2.12a7.5 7.5 0 0 0 3.75-.97 7.29 7.29 0 0 0 2.72-2.63 6.93 6.93 0 0 0 1-3.63c0-.71-.11-1.39-.31-2.05h2.11v10.12zm0-13.95c0 .3-.11.56-.31.77a1.05 1.05 0 0 1 -.77.31h-2.72c-.3 0-.56-.11-.77-.31a1.05 1.05 0 0 1 -.31-.77v-2.58c0-.29.11-.54.31-.76s.47-.32.77-.32h2.72c.3 0 .56.11.77.32s.31.47.31.76z"
+                                    fill-rule="evenodd"
+                                  ></path>
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer End  -->
+    </div>
+    <!-- Body End -->
+  </body>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</html>
