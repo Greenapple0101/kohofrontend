@@ -125,5 +125,141 @@ npm run preview
 3. `feature/xxx` 브랜치 생성 → PR 요청
 4. 코드 리뷰 후 main 병합
 
+---
+
+## 📌 주요 기능
+
+- **홈페이지**: 헤더, 통합 검색 바, 지도 뷰, 숙소 카드 리스트
+- **Wish List**: 로컬 스토리지 기반 즐겨찾기 토글
+- **지도 표시**: Kakao Maps SDK를 이용한 마커 및 인포윈도우
+- **반응형 UI**: Tailwind CSS + 커스텀 CSS 적용
+- **CI/CD**: GitHub Actions → Firebase Hosting 자동 배포
+
+---
+
+## 🛠 기술 스택
+
+| 구분       | 기술                                    |
+|------------|-----------------------------------------|
+| 프레임워크 | React (Vite)                            |
+| 스타일링   | Tailwind CSS, PostCSS                   |
+| 지도       | Kakao Maps JavaScript SDK               |
+| 배포       | Firebase Hosting                        |
+| CI 도구    | GitHub Actions                          |
+
+---
+
+## 🗂 폴더 구조
+
+```
+KohoFrontend/
+├── src/                 # React 소스 코드
+│   ├── App.jsx
+│   ├── Header.jsx
+│   ├── Map.jsx
+│   └── index.css        # 전역 스타일
+├── public/              # 정적 파일 (favicon 등)
+│   └── kohologo.jpg
+├── dist/                # 빌드 산출물 (npm run build 후 생성)
+│   ├── index.html
+│   ├── 404.html
+│   ├── assets/…        # js, css 번들 파일
+│   └── kohologo.jpg
+├── .github/workflows/   # GitHub Actions 워크플로우
+│   └── firebase-hosting-merge.yml
+├── firebase.json        # Firebase Hosting 설정
+├── .firebaserc          # Firebase 프로젝트 연결 정보
+├── package.json
+└── README.md
+```
+
+---
+
+## 🚀 로컬 개발 설정
+
+1. 저장소 클론
+   ```bash
+   git clone https://github.com/Greenapple0101/kohofrontend.git
+   cd kohofrontend
+   ```
+2. 의존성 설치
+   ```bash
+   npm install
+   ```
+3. 개발 서버 실행
+   ```bash
+   npm run dev
+   ```
+   - 기본: `http://localhost:5173`
+
+---
+
+## 🏗️ 빌드
+
+프로덕션용 번들 생성:
+```bash
+npm run build
+```  
+빌드 결과는 `dist/` 폴더에 저장됩니다.
+
+---
+
+## ☁️ Firebase Hosting 배포
+
+### 1. Firebase 프로젝트 초기화 (한 번만)
+```bash
+firebase login
+firebase init hosting
+```
+- public 디렉터리: `dist`
+- SPA rewrites: 모든 경로 `index.html`
+
+### 2. 빌드 후 배포
+```bash
+npm run build
+firebase deploy --only hosting
+```
+
+배포 완료 시, Firebase가 제공하는 URL을 통해 실제 사이트가 공개됩니다.
+
+---
+
+## 🤖 GitHub Actions CI/CD
+
+`firebase init hosting:github`를 통해 자동 생성된 워크플로우에서:
+- 커밋 푸시 → `npm ci` → `npm run build` → `firebase deploy`
+- `FIREBASE_SERVICE_ACCOUNT_<PROJECT_ID>` 시크릿 설정 필요
+
+```yaml
+# .github/workflows/firebase-hosting-merge.yml 예시
+name: Deploy to Firebase Hosting on merge
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm ci
+      - run: npm run build
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KOHOFRONTEND }}
+          channelId: live
+          projectId: kohofrontend
+```
+
+---
+
+## 📄 라이선스
+
+MIT © 2025 Global Home 팀
+
+
+
 **Global Home** 프로젝트에 관심 가져주셔서 감사합니다! 🙏
 
