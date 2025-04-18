@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Home Prototype</title>
+  <!-- Global Styles -->
+  <style>
+    /* ────────────────────────────────────────────────────────────────────────── */
+    /* Variables */
+    :root {
+      --koho-blue:    #0077cc;
+      --koho-yellow:  #f9c846;
+      --white:        #ffffff;
+      --bg-light:     #f9f9f9;
+      --text-dark:    #333333;
+      --text-muted:   #666666;
+      --radius:       8px;
+      --transition:   0.2s ease;
+    }
+
+    /* Reset & Box Sizing */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Body */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ────────────────────────────────────────────────────────────────────────── */
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: var(--koho-blue);
+      color: var(--white);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      height: 40px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      font-weight: 600;
+    }
+    nav ul li a {
+      color: var(--white);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* ────────────────────────────────────────────────────────────────────────── */
+    /* Search Section */
+    .search-section {
+      display: flex;
+      justify-content: center;
+      padding: 30px 20px;
+      background: var(--koho-yellow);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      flex-wrap: wrap;
+    }
+    .search-section input {
+      flex: 1 1 300px;
+      max-width: 400px;
+      padding: 12px 16px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: var(--radius) 0 0 var(--radius);
+      outline: none;
+    }
+    .search-section button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background: var(--koho-blue);
+      color: var(--white);
+      border: none;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      cursor: pointer;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+    .search-section button:hover {
+      opacity: 0.9;
+    }
+
+    /* ────────────────────────────────────────────────────────────────────────── */
+    /* Map Section */
+    .map-section {
+      width: 100%;
+      max-width: 960px;
+      margin: 40px auto 20px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    #map {
+      width: 100%;
+      height: 400px;
+    }
+
+    /* ────────────────────────────────────────────────────────────────────────── */
+    /* Listings Section */
+    .listing-wrapper {
+      flex: 1;
+      width: 100%;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px 40px;
+    }
+    .listing-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+      gap: 20px;
+    }
+    .listing-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+    .listing-card:hover {
+      transform: translateY(-4px);
+    }
+    .listing-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .listing-content {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .listing-content h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .listing-content p {
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      flex-grow: 1;
+    }
+    .wishlist-icon {
+      align-self: flex-start;
+      padding: 6px 14px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      background: var(--white);
+      cursor: pointer;
+      font-size: 14px;
+      transition: var(--transition);
+    }
+    .wishlist-icon:hover {
+      background: var(--koho-yellow);
+      border-color: var(--koho-blue);
+      color: var(--koho-blue);
+    }
+    .wishlist-icon.saved {
+      background: var(--koho-blue);
+      color: var(--white);
+      border-color: var(--koho-blue);
+    }
+
+    /* ────────────────────────────────────────────────────────────────────────── */
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: var(--koho-blue);
+      color: var(--white);
+      font-size: 14px;
+      margin-top: auto;
+    }
+
+    /* ────────────────────────────────────────────────────────────────────────── */
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 16px;
+      }
+      .search-section input {
+        max-width: none;
+        border-radius: var(--radius);
+        margin-bottom: 12px;
+      }
+      .search-section button {
+        border-radius: var(--radius);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="kohologo.jpg" alt="Global Home Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Listings</a></li>
+        <li><a href="#">Favorites</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SEARCH BAR -->
+  <section class="search-section">
+    <input id="searchInput" type="text" placeholder="Search in Sinchon, Mapo-gu…" />
+    <button id="searchBtn">Search</button>
+  </section>
+
+  <!-- MAP DISPLAY -->
+  <section class="map-section">
+    <div id="map"></div>
+  </section>
+
+  <!-- LISTINGS WRAPPER -->
+  <div class="listing-wrapper">
+    <section class="listing-section" id="listingSection">
+      <!-- Listing cards will be injected here via JS -->
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 Global Home. All rights reserved.
+  </footer>
+
+  <!-- KAKAO MAP SDK -->
+  <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7a1e48880ae38fcc21ffae680e45255f&autoload=false"></script>
+
+  <!-- SITE LOGIC -->
+  <script>
+    (function() {
+      const STORAGE_KEY = 'global-home-wishlist';
+      let wishlist = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+
+      // Dummy data for listings
+      const LISTINGS = [
+        { id: 'sinchon-room-1', title: 'Studio near Sogang Univ.',    desc: 'Cozy studio, 10 min walk to campus.', lat: 37.5524, lng: 126.9352 },
+        { id: 'yeonnam-room-1', title: 'One‑room near Hongdae',     desc: 'Modern studio close to nightlife.', lat: 37.5648, lng: 126.9255 },
+        { id: 'changjeon-room-1', title: 'Studio with view',        desc: 'Beautiful cityscape vistas.',      lat: 37.5497, lng: 126.9334 }
+      ];
+
+      // Render listing cards
+      function renderListings(filterText = '') {
+        const container = document.getElementById('listingSection');
+        container.innerHTML = ''; // clear
+
+        const filtered = LISTINGS.filter(item =>
+          item.title.toLowerCase().includes(filterText.toLowerCase())
+        );
+
+        filtered.forEach(item => {
+          const card = document.createElement('div');
+          card.className = 'listing-card';
+          card.dataset.id = item.id;
+
+          card.innerHTML = `
+            <img src="https://via.placeholder.com/300x200" alt="${item.title}" />
+            <div class="listing-content">
+              <h3>${item.title}</h3>
+              <p>${item.desc}</p>
+              <button class="wishlist-icon"></button>
+            </div>
+          `;
+          container.appendChild(card);
+
+          const btn = card.querySelector('.wishlist-icon');
+          updateWishlistBtn(btn, item.id);
+          btn.addEventListener('click', () => toggleWishlist(item.id, btn));
+        });
+
+        if (filtered.length === 0) {
+          container.innerHTML = '<p style="grid-column:1/-1; text-align:center; color:var(--text-muted);">No results found.</p>';
+        }
+      }
+
+      // Wishlist button text & style
+      function updateWishlistBtn(btn, id) {
+        if (wishlist.includes(id)) {
+          btn.textContent = '★ Saved';
+          btn.classList.add('saved');
+        } else {
+          btn.textContent = '♡ Save';
+          btn.classList.remove('saved');
+        }
+      }
+
+      // Toggle wishlist and persist
+      function toggleWishlist(id, btn) {
+        wishlist = wishlist.includes(id)
+          ? wishlist.filter(x => x !== id)
+          : [...wishlist, id];
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(wishlist));
+        updateWishlistBtn(btn, id);
+      }
+
+      // Initialize listings on DOM ready
+      document.addEventListener('DOMContentLoaded', () => {
+        renderListings();
+
+        // Search behavior
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+        searchBtn.addEventListener('click', () => {
+          renderListings(searchInput.value.trim());
+        });
+        searchInput.addEventListener('keyup', (e) => {
+          if (e.key === 'Enter') renderListings(searchInput.value.trim());
+        });
+      });
+
+      // Initialize Kakao Map
+      window.kakao.maps.load(() => {
+        const mapContainer = document.getElementById('map');
+        const mapOptions = {
+          center: new kakao.maps.LatLng(37.5533, 126.9368),
+          level: 4
+        };
+        const map = new kakao.maps.Map(mapContainer, mapOptions);
+
+        // InfoWindow for markers
+        const infoWindow = new kakao.maps.InfoWindow({ zIndex:1 });
+
+        // Add markers
+        LISTINGS.forEach(item => {
+          const marker = new kakao.maps.Marker({
+            map: map,
+            position: new kakao.maps.LatLng(item.lat, item.lng),
+            title: item.title
+          });
+          kakao.maps.event.addListener(marker, 'click', () => {
+            const content = `<div style="padding:8px; font-size:14px;">
+                              <strong>${item.title}</strong><br/>
+                              <span style="color:#555;">${item.desc}</span>
+                             </div>`;
+            infoWindow.setContent(content);
+            infoWindow.open(map, marker);
+          });
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
